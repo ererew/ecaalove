@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy with Zoom Effect</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+        "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.152.2/examples/jsm/controls/OrbitControls.js",
+        "three/examples/jsm/loaders/FontLoader.js": "https://unpkg.com/three@0.152.2/examples/jsm/loaders/FontLoader.js",
+        "three/examples/jsm/geometries/TextGeometry.js": "https://unpkg.com/three@0.152.2/examples/jsm/geometries/TextGeometry.js"
+      }
+    }
+  </script>
+  <style>
+    #musicButton {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      background-color: #ffffff10;
+      color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 9999;
+      font-weight: bold;
+      backdrop-filter: blur(5px);
+    }
+    #musicButton:hover {
+      background-color: #ffffff30;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+
+  <h1 style="position: fixed; bottom: 10px; right: 10px; font-size: 18px; font-family: Arial, sans-serif; color: white; background: rgba(0, 0, 0, 0.4); padding: 6px 12px; border-radius: 8px; z-index: 9999;">
+    Dari ree untuk caa
+  </h1>
+
+  <!-- Tombol musik -->
+  <button id="musicButton">Mainkan Musik 🎵</button>
+
+  <!-- Audio file -->
+  <audio id="bgMusic" src="lagu.mp3" loop></audio>
+
+  <script>
+    const btn = document.getElementById("musicButton");
+    const music = document.getElementById("bgMusic");
+
+    btn.addEventListener("click", () => {
+      music.play();
+      btn.style.display = "none"; // sembunyikan tombol setelah diputar
+    });
+  </script>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
