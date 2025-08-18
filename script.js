@@ -1,4 +1,4 @@
-coba cek script js nya import * as THREE from 'three';
+import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
@@ -587,10 +587,10 @@ scene.add(planet);
 
 //Ganti Deskripsi Planet
 const ringTexts = [
-  "💫 Galaxy of Love, tercipta hanya untuk kita 💫", // layer 1
-  "❤️ I Love You, selamanya dan selalu ❤️",         // layer 2
-  "🌸 Happy Girlfriend Day, my dearest 🌸",         // layer 3
-  "💍 15/08/2025 - Awal kisah indah kita 💍",        // layer 4
+  'Galaxy of love From ...',//untuk deskripsi planet layer 1
+  "I love you",//untuk deskripsi planet layer 2
+  "♡Happy Girlfriend day♡",//untuk deskripsi planet layer 3
+  "01/08/2025",//untuk deskripsi planet layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
