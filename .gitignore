@@ -1,0 +1,11 @@
+# Ignore system files and build outputs
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon
+ehthumbs.db
+Thumbs.db
+.vercel
+dist/
+build/
