@@ -587,12 +587,13 @@ scene.add(planet);
 
 // Ganti Deskripsi Planet
 const ringTexts = [
-  'Galaksi kecil ini aku buat untuk menyimpan semua rasa yang sederhana tapi tulus untukmu ✨', // layer 1
-  "Seperti gravitasi, kamu selalu menarik perhatianku tanpa pernah kulepaskan 🌙",              // layer 2
-  "Kita berdua bukan kebetulan, kita adalah orbit yang memang ditakdirkan bertemu 💫",         // layer 3
-  "15/08/2025 💖 tanggal yang jadi pengingat betapa berartinya kamu di hidupku 🌌",            // layer 4
+  "✨💖✨💖✨",   // layer 1
+  "💫❤️💫❤️💫", // layer 2
+  "💕✨💕✨💕",   // layer 3
+  "💖🌌💖🌌💖", // layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
+
 
 
 function createTextRings() {
