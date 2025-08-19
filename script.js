@@ -587,12 +587,13 @@ scene.add(planet);
 
 // Ganti Deskripsi Planet
 const ringTexts = [
-  "✨💖✨💖✨",   // layer 1
-  "💫❤️💫❤️💫", // layer 2
-  "💕✨💕✨💕",   // layer 3
-  "💖🌌💖🌌💖", // layer 4
+  "💖💖💖💖💖", // layer 1
+  "💖💖💖💖💖", // layer 2
+  "💖💖💖💖💖", // layer 3
+  "💖💖💖💖💖", // layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
+
 
 
 
