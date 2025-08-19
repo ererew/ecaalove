@@ -585,12 +585,12 @@ planet.position.set(0, 0, 0);
 scene.add(planet);
 
 
-//Ganti Deskripsi Planet
+// Ganti Deskripsi Planet
 const ringTexts = [
-  'Galaxy of love From ...',//untuk deskripsi planet layer 1
-  "I love you",//untuk deskripsi planet layer 2
-  "♡Happy Girlfriend day♡",//untuk deskripsi planet layer 3
-  "01/08/2025",//untuk deskripsi planet layer 4
+  'Galaxy of Love ✨ tempat aku simpan semua rasa untukmu 💕', // layer 1
+  "Kamu itu satelit hatiku, selalu mengitari pikiranku 🌙",     // layer 2
+  "♡ Kamu + Aku = Orbit Cinta Selamanya ♡ 💫",                // layer 3
+  "15/08/2025 💖 Hari spesial kita di semesta ini 🌌",         // layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
